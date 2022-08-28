@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 // components
 
-import TableDropdown from "components/Dropdowns/TableDropdown.js";
+import TableDropdownForIndividualForBenefits from "components/Dropdowns/TableDropdownForIndividualForBenefits";
 
 export default function CardTable({ color }) {
   return (
@@ -23,7 +23,7 @@ export default function CardTable({ color }) {
                   (color === "light" ? "text-blueGray-700" : "text-white")
                 }
               >
-                Card Tables
+                Redeemable benefits ✨
               </h3>
             </div>
           </div>
@@ -41,7 +41,7 @@ export default function CardTable({ color }) {
                       : "bg-lightBlue-800 text-lightBlue-300 border-lightBlue-700")
                   }
                 >
-                  Project
+                  Benefit
                 </th>
                 <th
                   className={
@@ -51,7 +51,7 @@ export default function CardTable({ color }) {
                       : "bg-lightBlue-800 text-lightBlue-300 border-lightBlue-700")
                   }
                 >
-                  Budget
+                  Expiration
                 </th>
                 <th
                   className={
@@ -63,7 +63,7 @@ export default function CardTable({ color }) {
                 >
                   Status
                 </th>
-                <th
+                {/* <th
                   className={
                     "px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left " +
                     (color === "light"
@@ -72,7 +72,7 @@ export default function CardTable({ color }) {
                   }
                 >
                   Users
-                </th>
+                </th> */}
                 <th
                   className={
                     "px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left " +
@@ -81,7 +81,7 @@ export default function CardTable({ color }) {
                       : "bg-lightBlue-800 text-lightBlue-300 border-lightBlue-700")
                   }
                 >
-                  Completion
+                  Rarity
                 </th>
                 <th
                   className={
@@ -96,91 +96,28 @@ export default function CardTable({ color }) {
             <tbody>
               <tr>
                 <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left flex items-center">
-                  <img
+                  {/* <img
                     src={require("assets/img/bootstrap.jpg").default}
                     className="h-12 w-12 bg-white rounded-full border"
                     alt="..."
-                  ></img>{" "}
+                  ></img>{" "} */}
                   <span
                     className={
                       "ml-3 font-bold " +
                       +(color === "light" ? "text-blueGray-600" : "text-white")
                     }
                   >
-                    Argon Design System
+                    Preapproved ₹50,000 personal loan from SBI
                   </span>
                 </th>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                  $2,500 USD
-                </td>
-                <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                  <i className="fas fa-circle text-orange-500 mr-2"></i> pending
-                </td>
-                <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                  <div className="flex">
-                    <img
-                      src={require("assets/img/team-1-800x800.jpg").default}
-                      alt="..."
-                      className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow"
-                    ></img>
-                    <img
-                      src={require("assets/img/team-2-800x800.jpg").default}
-                      alt="..."
-                      className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
-                    ></img>
-                    <img
-                      src={require("assets/img/team-3-800x800.jpg").default}
-                      alt="..."
-                      className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
-                    ></img>
-                    <img
-                      src={require("assets/img/team-4-470x470.png").default}
-                      alt="..."
-                      className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
-                    ></img>
-                  </div>
-                </td>
-                <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                  <div className="flex items-center">
-                    <span className="mr-2">60%</span>
-                    <div className="relative w-full">
-                      <div className="overflow-hidden h-2 text-xs flex rounded bg-red-200">
-                        <div
-                          style={{ width: "60%" }}
-                          className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500"
-                        ></div>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-                <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right">
-                  <TableDropdown />
-                </td>
-              </tr>
-              <tr>
-                <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left flex items-center">
-                  <img
-                    src={require("assets/img/angular.jpg").default}
-                    className="h-12 w-12 bg-white rounded-full border"
-                    alt="..."
-                  ></img>{" "}
-                  <span
-                    className={
-                      "ml-3 font-bold " +
-                      +(color === "light" ? "text-blueGray-600" : "text-white")
-                    }
-                  >
-                    Angular Now UI Kit PRO
-                  </span>
-                </th>
-                <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                  $1,800 USD
+                  4th November, 2022
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                   <i className="fas fa-circle text-emerald-500 mr-2"></i>{" "}
-                  completed
+                  Available
                 </td>
-                <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
+                {/* <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                   <div className="flex">
                     <img
                       src={require("assets/img/team-1-800x800.jpg").default}
@@ -203,47 +140,48 @@ export default function CardTable({ color }) {
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
                     ></img>
                   </div>
-                </td>
+                </td> */}
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                   <div className="flex items-center">
-                    <span className="mr-2">100%</span>
+                    <span className="mr-2">70%</span>
                     <div className="relative w-full">
-                      <div className="overflow-hidden h-2 text-xs flex rounded bg-emerald-200">
+                      <div className="overflow-hidden h-2 text-xs flex rounded bg-orange-200">
                         <div
-                          style={{ width: "100%" }}
-                          className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-emerald-500"
+                          style={{ width: "70%" }}
+                          className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-orange-500"
                         ></div>
                       </div>
                     </div>
                   </div>
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right">
-                  <TableDropdown />
+                  <TableDropdownForIndividualForBenefits />
                 </td>
               </tr>
               <tr>
                 <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left flex items-center">
-                  <img
-                    src={require("assets/img/sketch.jpg").default}
+                  {/* <img
+                    src={require("assets/img/angular.jpg").default}
                     className="h-12 w-12 bg-white rounded-full border"
                     alt="..."
-                  ></img>{" "}
+                  ></img>{" "} */}
                   <span
                     className={
                       "ml-3 font-bold " +
                       +(color === "light" ? "text-blueGray-600" : "text-white")
                     }
                   >
-                    Black Dashboard Sketch
+                    Income tax rebate of ₹5,000 under section 87a
                   </span>
                 </th>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                  $3,150 USD
+                  30th July, 2023
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                  <i className="fas fa-circle text-red-500 mr-2"></i> delayed
+                  <i className="fas fa-circle text-emerald-500 mr-2"></i>{" "}
+                  Available
                 </td>
-                <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
+                {/* <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                   <div className="flex">
                     <img
                       src={require("assets/img/team-1-800x800.jpg").default}
@@ -266,25 +204,88 @@ export default function CardTable({ color }) {
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
                     ></img>
                   </div>
-                </td>
+                </td> */}
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                   <div className="flex items-center">
-                    <span className="mr-2">73%</span>
+                    <span className="mr-2">95%</span>
                     <div className="relative w-full">
-                      <div className="overflow-hidden h-2 text-xs flex rounded bg-red-200">
+                      <div className="overflow-hidden h-2 text-xs flex rounded bg-orange-200">
                         <div
-                          style={{ width: "73%" }}
-                          className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500"
+                          style={{ width: "95%" }}
+                          className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-orange-500"
                         ></div>
                       </div>
                     </div>
                   </div>
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right">
-                  <TableDropdown />
+                  <TableDropdownForIndividualForBenefits />
                 </td>
               </tr>
               <tr>
+                <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left flex items-center">
+                  {/* <img
+                    src={require("assets/img/sketch.jpg").default}
+                    className="h-12 w-12 bg-white rounded-full border"
+                    alt="..."
+                  ></img>{" "} */}
+                  <span
+                    className={
+                      "ml-3 font-bold " +
+                      +(color === "light" ? "text-blueGray-600" : "text-white")
+                    }
+                  >
+                    1x priority access for driving license renewal
+                  </span>
+                </th>
+                <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
+                  3rd January, 2022
+                </td>
+                <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
+                  <i className="fas fa-circle text-red-500 mr-2"></i> Claimed
+                </td>
+                {/* <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
+                  <div className="flex">
+                    <img
+                      src={require("assets/img/team-1-800x800.jpg").default}
+                      alt="..."
+                      className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow"
+                    ></img>
+                    <img
+                      src={require("assets/img/team-2-800x800.jpg").default}
+                      alt="..."
+                      className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+                    ></img>
+                    <img
+                      src={require("assets/img/team-3-800x800.jpg").default}
+                      alt="..."
+                      className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+                    ></img>
+                    <img
+                      src={require("assets/img/team-4-470x470.png").default}
+                      alt="..."
+                      className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+                    ></img>
+                  </div>
+                </td> */}
+                <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
+                  <div className="flex items-center">
+                    <span className="mr-2">10%</span>
+                    <div className="relative w-full">
+                      <div className="overflow-hidden h-2 text-xs flex rounded bg-orange-200">
+                        <div
+                          style={{ width: "10%" }}
+                          className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-orange-500"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right">
+                  <TableDropdownForIndividualForBenefits />
+                </td>
+              </tr>
+              {/* <tr>
                 <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left flex items-center">
                   <img
                     src={require("assets/img/react.jpg").default}
@@ -411,7 +412,7 @@ export default function CardTable({ color }) {
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right">
                   <TableDropdown />
                 </td>
-              </tr>
+              </tr> */}
             </tbody>
           </table>
         </div>
